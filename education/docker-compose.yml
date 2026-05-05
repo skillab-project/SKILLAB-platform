@@ -4,8 +4,8 @@ services:
     image: skillabproject/ui:0.1.145
     container_name: ui
     environment:
-      - REACT_APP_API_URL_TRACKER_USERNAME=xxx
-      - REACT_APP_API_URL_TRACKER_PASSWORD=xxx
+      - REACT_APP_API_URL_TRACKER_USERNAME=event_public
+      - REACT_APP_API_URL_TRACKER_PASSWORD=PublicOnly2026
       - REACT_APP_API_URL_TRACKER=https://skillab-tracker.csd.auth.gr
       - REACT_APP_API_URL_KU_PUBLIC=https://se.uom.gr/skillab-public-ku-detection
       - REACT_APP_INSTALLATION=education
@@ -41,8 +41,8 @@ services:
       - APP_JWT_SECRET=secretkey #secret key for JWT, to be updated
       - FRONTEND_URL=http://localhost:3000
       - TRACKER_API_URL=https://skillab-tracker.csd.auth.gr
-      - TRACKER_API_USERNAME=
-      - TRACKER_API_PASSWORD=
+      - TRACKER_API_USERNAME=event_public
+      - TRACKER_API_PASSWORD=PublicOnly2026
     restart: unless-stopped
     ports:
       - '8081:8080'
@@ -65,8 +65,8 @@ services:
     container_name: diversity-analysis
     environment:
       - URL=https://skillab-tracker.csd.auth.gr/api
-      - USERNAME=
-      - PASSWORD=
+      - USERNAME=event_public
+      - PASSWORD=PublicOnly2026
     volumes:
       - diversity_data:/app/data
     restart: unless-stopped
@@ -81,8 +81,8 @@ services:
     environment:
       - PYTHONUNBUFFERED=1
       - TRACKER_API=https://skillab-tracker.csd.auth.gr/api
-      - USERNAME=
-      - PASSWORD=
+      - USERNAME=event_public
+      - PASSWORD=PublicOnly2026
     volumes:
       - app_hcv:/app/Completed_Analyses
     restart: unless-stopped
@@ -145,8 +145,8 @@ services:
     container_name: skill-ageing
     environment:
       - TRACKER_API=https://skillab-tracker.csd.auth.gr/api
-      - TRACKER_USERNAME=
-      - TRACKER_PASSWORD=
+      - TRACKER_USERNAME=event_public
+      - TRACKER_PASSWORD=PublicOnly2026
       - KU_API_URL=http://ku-detection-backend:5000
     volumes:
       - skill-ageing_analyses:/app/Completed_Analyses
@@ -161,8 +161,8 @@ services:
     container_name: giant-component-networks
     environment:
       - TRACKER_API=https://skillab-tracker.csd.auth.gr/api
-      - TRACKER_USERNAME=
-      - TRACKER_PASSWORD=
+      - TRACKER_USERNAME=event_public
+      - TRACKER_PASSWORD=PublicOnly2026
       - KU_API_URL=http://ku-detection-backend:5000
     volumes:
       - giant-component-networks_analyses:/app/Completed_Analyses
@@ -188,8 +188,8 @@ services:
     container_name: escoplus-skills-extender
     environment:
       - TRACKER_API=https://skillab-tracker.csd.auth.gr/api
-      - TRACKER_USERNAME=
-      - TRACKER_PASSWORD=
+      - TRACKER_USERNAME=event_public
+      - TRACKER_PASSWORD=PublicOnly2026
     volumes:
       - escoplus-skills-extender_analyses:/app/Completed_Analyses
     restart: unless-stopped
