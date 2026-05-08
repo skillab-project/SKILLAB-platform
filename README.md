@@ -34,7 +34,7 @@ cd SKILLAB-platform
 | Role Classification | ❌ | ❌ | ❌ | ✅ | [View Repository](https://github.com/skillab-project/role_classification) |
 | Occupational Demand Forecaster | ✅ | ✅ | ✅ | ✅ | [View Repository](https://github.com/skillab-project/occupational-demand-forecaster) |
 | KU-Detection | ✅ | ✅ | ✅ | ✅ | [View Repository](https://github.com/skillab-project/KU-Detection) |
-| SKILLAB Tracker | ✅ | ✅ | ✅ | ✅ | [View Repository](https://github.com/skillab-project/Skillab-Tracker) |
+| SKILLAB Tracker | ✅ | ✅ | ✅ | ✅ | [View Repository](https://github.com/skillab-project/Skillab-Tracker-Testathon-2026) |
 | Hiring Management | ❌ | ✅ | ❌ | ❌ | [View Repository](https://github.com/skillab-project/hiring-management) |
 | Employee Management | ❌ | ✅ | ❌ | ❌ | [View Repository](https://github.com/skillab-project/employee-management) |
 | Digital Policy Management | ❌ | ❌ | ❌ | ✅ | [View Repository](https://github.com/skillab-project/digital-policy-management) |
